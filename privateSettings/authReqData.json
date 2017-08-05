@@ -1,0 +1,11 @@
+{
+  "baseURL": "https://oauth.vk.com",
+  "method": "authorize",
+  "clientId": "5754870",
+  "display": "page",
+  "redirectLoc": "blank.html",
+  "scope": "messages",
+  "responseType": "token",
+  "vkAPIVersion": "5.67",
+  "controlString": "12345"
+}
