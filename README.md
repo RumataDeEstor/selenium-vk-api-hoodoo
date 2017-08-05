@@ -1,7 +1,9 @@
 # Get token from VK API using client app id
 
 Note:
+
 Drivers used here may become obsolete at any time ;D
+
 Just for quick setup ATM.
 
 Note that you need to have your standalone app registered in `vk.com`.
