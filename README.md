@@ -4,7 +4,7 @@ Note:
 
 Drivers used here may become obsolete at any time ;D
 
-(as well as CSS selectors in this vk form)
+(as well as selectors in this vk form)
 
 Just for quick setup ATM.
 
@@ -22,7 +22,7 @@ $ node index.js
 or, f.e.
 
 ```sh
-$ $ SELENIUM_BROWSER=firefox node index.js
+$ SELENIUM_BROWSER=firefox node index.js
 ```
 
 ### How to run?
