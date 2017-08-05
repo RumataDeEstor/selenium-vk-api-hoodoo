@@ -1,13 +1,17 @@
 # Get token from VK API using client app id
 
 Note:
+
 Drivers used here may become obsolete at any time ;D
+
 Just for quick setup ATM.
 
 You need to have Java installed.
 
 Note that you need to have your standalone app registered in `vk.com`.
+
 `npm start` is currently configured for Linux due to PATH :)
+
 Alternatively, just download appropriate drivers, put them into root directory and run:
 
 ```sh
@@ -36,8 +40,9 @@ $ SELENIUM_BROWSER=firefox npm start
 ```
 
 If all is well, you'll see the following output in your console:
+
 ***Token is updated***.
-You will find it here:
-`payload/token.txt`.
+
+You will find it here: `payload/token.txt`.
 
 Ready. Have a nice day. And be careful with your private data. Don't trust anyone.
