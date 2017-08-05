@@ -8,5 +8,8 @@
     "start": "PATH=$PATH:$(pwd)/drivers node index.js"
   },
   "author": "Rumata",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "selenium-webdriver": "^3.5.0"
+  }
 }

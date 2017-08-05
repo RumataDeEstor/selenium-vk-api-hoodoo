@@ -4,6 +4,8 @@ Note:
 Drivers used here may become obsolete at any time ;D
 Just for quick setup ATM.
 
+You need to have Java installed.
+
 Note that you need to have your standalone app registered in `vk.com`.
 `npm start` is currently configured for Linux due to PATH :)
 Alternatively, just download appropriate drivers, put them into root directory and run:
