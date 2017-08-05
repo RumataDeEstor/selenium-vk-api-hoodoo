@@ -4,6 +4,8 @@ Note:
 
 Drivers used here may become obsolete at any time ;D
 
+(as well as CSS selectors in this vk form)
+
 Just for quick setup ATM.
 
 You need to have Java installed.
