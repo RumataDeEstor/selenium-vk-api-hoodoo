@@ -11,10 +11,11 @@ const AUTH_REQ_DATA = {
   clientId: process.env.CLIENT_ID,
 };
 
-function processPayload(root, url) {
+function processPayload(url) {
+  const path = process.env.PAYLOAD_PATH || './';
   const token = getTokenFromStr(url);
 
-  writeTokenToFile(root, token);
+  writeTokenToFile(path, token);
 }
 
 function getUserCreds() {
@@ -25,8 +26,8 @@ function getTokenFromStr(str) {
   return str.match(/token=(\w+)/)[1];
 }
 
-function writeTokenToFile(root, token) {
-  const dir = `${root}/payload`;
+function writeTokenToFile(path, token) {
+  const dir = `${path}/payload`;
   const filename = 'token.txt';
 
   createDirIfNotExist(dir);

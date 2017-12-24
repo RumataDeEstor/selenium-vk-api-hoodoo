@@ -32,7 +32,7 @@ function main() {
     .then(_ => _.sendKeys(CREDS.password))
     .then(() => findAndClickEl(SUBMIT_BUTTON))
     .then(() => driver.getCurrentUrl())
-    .then(_ => processPayload(__dirname, _))
+    .then(_ => processPayload(_))
     .then(() => driver.quit());
 }
 
