@@ -1,7 +1,6 @@
 {
   "baseURL": "https://oauth.vk.com",
   "method": "authorize",
-  "clientId": "",
   "display": "page",
   "redirectLoc": "blank.html",
   "scope": "messages",

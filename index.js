@@ -10,6 +10,8 @@ const EMAIL_FIELD = { name: 'email' };
 const PASS_FIELD = { name: 'pass' };
 const SUBMIT_BUTTON = { className: 'flat_button' };
 
+// selenium-webdriver handles execution with SELENIUM_BROWSER env var by itself;
+// chrome is used by default here
 const driver = new webdriver.Builder()
   .forBrowser('chrome')
   .build();

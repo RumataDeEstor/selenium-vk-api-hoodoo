@@ -1,7 +1,15 @@
 const fs = require('fs');
 
-const CREDS = require('../privateSettings/creds.json');
-const AUTH_REQ_DATA = require('../privateSettings/authReqData.json');
+const reqSettings = require('../privateSettings/authReqSettings.json');
+const CREDS = {
+  password: process.env.PASSWORD,
+  email: process.env.EMAIL,
+};
+
+const AUTH_REQ_DATA = {
+  ...reqSettings,
+  clientId: process.env.CLIENT_ID,
+};
 
 function processPayload(root, url) {
   const token = getTokenFromStr(url);
@@ -29,6 +37,7 @@ function writeTokenToFile(root, token) {
   stream.write(token);
   stream.end();
   stream.on("finish", () => { console.log('Token updated.') });
+  stream.on("error", (err) => { console.error(err) });
 }
 
 function createDirIfNotExist(dir) {
