@@ -24,18 +24,21 @@ or, f.e.
 ```sh
 $ SELENIUM_BROWSER=firefox node index.js
 ```
+### Env variables for this utility:
+- `EMAIL` *(required)* - your VK email;
+- `PASSWORD` *(required)* - your VK password;
+- `CLIENT_ID` *(required)* - ID of your standalone APP in VK;
+- `PAYLOAD_PATH` *(optional)* - you can specify the directory where you'll find `payload/token.txt`. By default it's project root directory.
 
 ### How to run?
-- First, plug in your credentials here: `privateSettings/creds.json`
-- And clientId for your standalone app here: `privateSettings/authReqData.json`
-- You can change target scope of token or whatever.
-- Then run:
+- In `privateSettings/authReqData.json` you can change target scope of token or whatever.
+- Then:
 
 ```sh
 $ npm install
-$ npm start
+$ { all your env vars } npm start
 ```
-It will run selenium with Chrome. To run with Firefox, do:
+It will run selenium with Chrome. To run with Firefox (selenium web driver will handle it), do:
 
 ```sh
 $ SELENIUM_BROWSER=firefox npm start
@@ -45,6 +48,6 @@ If all is well, you'll see the following output in your console:
 
 ***Token is updated***.
 
-You will find it here: `payload/token.txt`.
+You will find it here: `{PAYLOAD_PATH || ROOT}/payload/token.txt`.
 
 Ready. Have a nice day. And be careful with your private data. Don't trust anyone.
